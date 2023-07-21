@@ -102,8 +102,7 @@ form label {
 }
 
 #form-button:hover {
-  background: red;
-  border-style: initial;
+  background: hsl(234, 29%, 50%);
 }
 
 .image-container {

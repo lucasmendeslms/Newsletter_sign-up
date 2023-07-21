@@ -1,5 +1,3 @@
-// import validator from 'validator';
-
 function checkScrollBar() {
   const img = document.querySelector(".image-container img");
 
