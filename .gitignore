@@ -8,6 +8,7 @@
 design/
 project-information.md
 style-guide.md
+node_modules/
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################

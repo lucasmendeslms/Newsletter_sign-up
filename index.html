@@ -44,9 +44,12 @@
               </li>
             </ul>
             <form action="" method="post">
-              <label for="email">Email address</label>
-              <input id="email" type="text" placeholder="email@company.com" />
-              <input type="button" value="Subscribe to monthly newsletter" id="form-button"/>
+              <div class="container-message">
+                <label for="email">Email address</label>
+              </div>
+              <input id="email" type="text" placeholder="email@company.com" required autocomplete="off" class="email"/>
+              <input type="submit" value="Subscribe to monthly newsletter" id="form-button"
+              />
             </form>
           </div>
         </div>
@@ -56,5 +59,7 @@
       </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="node_modules/validator/validator.min.js"></script>
+
   </body>
 </html>
