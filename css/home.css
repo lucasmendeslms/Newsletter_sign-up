@@ -86,10 +86,14 @@ form label {
 }
 
 .email {
-  margin-top: 10px;
   border: 2px solid #ececec;
   padding-left: 20px;
   color: #ababad;
+}
+
+.container-input {
+  position: relative;
+  margin-top: 10px;
 }
 
 #form-button {
@@ -134,11 +138,14 @@ span.error-message  {
 
 /* Success state */
 
-.valid-email {
-  background: #19c37d !important;
-  color: #fff;
-  font-weight: 700;
-  border: gray;
+#validation-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
 }
 
 /* Responsive design */
