@@ -21,7 +21,7 @@ export default function checkUserInput() {
   
   else if(validator.isEmail(inputElement.value) && !valideEmail) {
     const validationIcon = document.createElement('img');
-    validationIcon.src = "/assets/images/check-symbol.svg";
+    validationIcon.src = "./assets/images/check-symbol.svg";
     validationIcon.id = 'validation-icon'
     validationIcon.classList.add('valid-email')
     containerInput.appendChild(validationIcon);
