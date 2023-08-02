@@ -78,7 +78,8 @@ form label {
   font-weight: 700;
 }
 
-#email, #form-button {
+#email,
+#form-button {
   width: 100%;
   height: 50px;
   border-radius: 7px;
@@ -112,6 +113,7 @@ form label {
 .image-container {
   display: flex;
   justify-content: flex-end;
+  border-radius: 5%;
 }
 
 .image-container img {
@@ -124,7 +126,7 @@ form label {
   color: #ea9490;
 }
 
-span.error-message  {
+span.error-message {
   font-weight: 700;
   font-size: 0.70rem;
 }
@@ -150,60 +152,79 @@ span.error-message  {
 
 /* Responsive design */
 
-@media(max-width: 580px) {
- 
-  .container {
-    background: #ffffff;
-  }
+@media(max-width: 1155px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .subscribe-container {
-    display: block;
-    order: 2;
-  }
-  .image-container {
-    display: flex;
-    justify-content: center;
-  }
-  .image-container img {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  #form-button {
-    margin: 20px 0 40px 0;
-  }
-  h1 {
-    font-size: 2.4rem;
-    margin-top: 30px;
+    max-width: 750px;
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 850px) {
 
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .subscribe-container {
     order: 2;
   }
+
   .image-container {
     display: block;
   }
+
   .image-container img {
     margin-left: 45px;
     border-radius: 5% 5% 0 0;
   }
+
   #form-button {
     margin-bottom: 30px;
   }
 }
 
-@media(max-width: 1155px) {
+@media(max-width: 580px) {
+
+  .container {
+    background: #ffffff;
+    display: inline-block;
+  }
+
   .grid-container {
-    max-width: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-container {
+    margin: 0;
+    padding: 0px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0 0 15px;
+    padding: 0;
+    border-radius: 5%;
+  }
+
+  #email,
+  #form-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-top: 30px;
+  }
+
+  .subscribe-informations {
+    margin: 0px 15px;
+    padding: 0;
   }
 }
