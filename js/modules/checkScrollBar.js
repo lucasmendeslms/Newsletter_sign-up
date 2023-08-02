@@ -9,9 +9,9 @@ export default function checkScrollBar() {
   const isMobile = window.innerWidth < 570;
 
   if (isTablet || hasScrollbar || isMobile) {
-    img.src = "/assets/images/illustration-sign-up-mobile.svg";
+    img.src = "./assets/images/illustration-sign-up-mobile.svg";
   } else {
-    img.src = "/assets/images/illustration-sign-up-desktop.svg";
+    img.src = "./assets/images/illustration-sign-up-desktop.svg";
   }
 
   window.addEventListener("load", checkScrollBar);
